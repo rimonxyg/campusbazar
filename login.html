@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusBazar - Unified Login</title>
+    <!-- Single External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+
+    <div class="login-card">
+        <!-- Card Header -->
+        <div class="login-header">
+            <div class="logo-title">Campus<span>Bazar</span></div>
+            <div class="subtitle">Unified Portal for Students, Teachers &amp; Alumni</div>
+        </div>
+
+        <!-- Form Body -->
+        <div class="form-content">
+            <form action="" method="post">
+                <!-- Role Selector (4 Entities) -->
+                <label class="login-label">Select Your Role:</label>
+                <div class="role-selector">
+                    <div class="role-option">
+                        <input type="radio" name="role" id="role_student" value="student" checked>
+                        <label for="role_student">Student</label>
+                    </div>
+                    <div class="role-option">
+                        <input type="radio" name="role" id="role_teacher" value="teacher">
+                        <label for="role_teacher">Teacher</label>
+                    </div>
+                    <div class="role-option">
+                        <input type="radio" name="role" id="role_alumni" value="alumni">
+                        <label for="role_alumni">Alumni</label>
+                    </div>
+                    <div class="role-option">
+                        <input type="radio" name="role" id="role_admin" value="admin">
+                        <label for="role_admin">Admin</label>
+                    </div>
+                </div>
+
+                <!-- Email or ID -->
+                <div class="form-group">
+                    <label for="login_id" class="login-label">University Email or User ID:</label>
+                    <input type="text" id="login_id" name="login_id" class="login-input" placeholder="e.g. 21-xxxxx-1 or user@aiub.edu" required>
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+                    <label for="login_password" class="login-label">Password:</label>
+                    <input type="password" id="login_password" name="login_password" class="login-input" placeholder="••••••••" required>
+                </div>
+
+                <!-- Extras: Remember Me & Forgot Password -->
+                <div class="extra-row">
+                    <label class="remember-me">
+                        <input type="checkbox" name="remember" id="remember">
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-link">Forgot password?</a>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn-submit">Sign In to CampusBazar</button>
+            </form>
+
+            <div class="divider">
+                <span>New User? Register Below</span>
+            </div>
+
+            <!-- Role Registration Links -->
+            <div class="registration-links">
+                Choose your entity to register:
+                <div class="registration-pills">
+                    <a href="alumni_registration.html" class="pill active-pill">🎓 Alumni Register</a>
+                    <a href="#" class="pill" title="Student registration module">🎒 Student</a>
+                    <a href="#" class="pill" title="Teacher registration module">👨‍🏫 Teacher</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+

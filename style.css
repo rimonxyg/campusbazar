@@ -1,0 +1,438 @@
+/* ==========================================================================
+   CampusBazar - External Stylesheet (style.css)
+   Contains all styling for Login and Alumni Registration
+   ========================================================================== */
+
+/* --- CSS Reset & Global Typography --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.5;
+    padding: 24px 16px;
+}
+
+/* Centered Layout Wrapper for Login */
+.login-body {
+    background: linear-gradient(135deg, #f0fdf4 0%, #e6fffa 50%, #f7fafc 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* ==========================================================================
+   1. Unified Login Page Styles
+   ========================================================================== */
+.login-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 440px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(15, 118, 110, 0.1), 0 8px 10px -6px rgba(15, 118, 110, 0.05);
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+}
+
+.login-header {
+    background: #0f766e;
+    color: #ffffff;
+    padding: 32px 28px;
+    text-align: center;
+}
+
+.logo-title {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 6px;
+}
+
+.logo-title span {
+    color: #fbbf24;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #ccfbf1;
+}
+
+.form-content {
+    padding: 28px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.login-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 6px;
+}
+
+.login-input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #0f172a;
+    outline: none;
+    transition: all 0.2s ease;
+    background-color: #f8fafc;
+}
+
+.login-input:focus {
+    border-color: #0f766e;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.15);
+}
+
+.role-selector {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    background: #f1f5f9;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.role-option {
+    position: relative;
+    text-align: center;
+}
+
+.role-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+}
+
+.role-option label {
+    display: block;
+    padding: 8px 4px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #64748b;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-bottom: 0;
+}
+
+.role-option input[type="radio"]:checked + label {
+    background: #ffffff;
+    color: #0f766e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.extra-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #475569;
+    cursor: pointer;
+}
+
+.forgot-link {
+    color: #0f766e;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 13px;
+    background: #0f766e;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.btn-submit:hover {
+    background: #115e59;
+}
+
+.btn-submit:active {
+    transform: scale(0.99);
+}
+
+.divider {
+    text-align: center;
+    position: relative;
+    margin: 24px 0 18px 0;
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #e2e8f0;
+}
+
+.divider span {
+    position: relative;
+    background: #ffffff;
+    padding: 0 12px;
+    font-size: 12px;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.registration-links {
+    text-align: center;
+    font-size: 13px;
+    color: #64748b;
+}
+
+.registration-pills {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.pill {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid #cbd5e1;
+    color: #334155;
+    transition: all 0.2s;
+    background-color: #f8fafc;
+}
+
+.pill.active-pill {
+    background-color: #f0fdf4;
+    border-color: #0f766e;
+    color: #0f766e;
+}
+
+.pill:hover {
+    border-color: #0f766e;
+    color: #0f766e;
+    background: #ffffff;
+}
+
+/* ==========================================================================
+   2. Alumni Registration Form Styles
+   ========================================================================== */
+.form-container {
+    max-width: 820px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.form-title {
+    text-align: center;
+    color: #0f766e;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.form-desc {
+    text-align: center;
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+fieldset {
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+legend {
+    font-weight: 600;
+    font-size: 15px;
+    color: #0f766e;
+    padding: 0 8px;
+}
+
+/* Table layout inside fieldsets */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+td {
+    padding: 4px 8px;
+    font-size: 14px;
+}
+
+td.valign-top {
+    vertical-align: top;
+}
+
+label {
+    font-weight: 500;
+    color: #334155;
+}
+
+/* Registration Inputs */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container input[type="tel"],
+.form-container input[type="date"],
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #0f172a;
+    outline: none;
+    transition: border-color 0.2s;
+    background-color: #f8fafc;
+}
+
+.form-container input:focus,
+.form-container select:focus,
+.form-container textarea:focus {
+    border-color: #0f766e;
+    background-color: #ffffff;
+}
+
+.form-container input[type="file"] {
+    font-size: 13px;
+    color: #475569;
+}
+
+.form-container input[type="radio"],
+.form-container input[type="checkbox"] {
+    margin-right: 6px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.form-container input[type="radio"]:first-child,
+.form-container input[type="checkbox"]:first-child {
+    margin-left: 0;
+}
+
+.actions-center {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+
+.btn-primary {
+    padding: 10px 24px;
+    background-color: #0f766e;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #115e59;
+}
+
+.btn-secondary {
+    padding: 10px 20px;
+    background-color: #e2e8f0;
+    color: #334155;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+    background-color: #cbd5e1;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #0f766e;
+    border: 1.5px solid #0f766e;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.btn-outline:hover {
+    background-color: #0f766e;
+    color: #ffffff;
+}
+
+.login-redirect {
+    text-align: center;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.login-redirect a {
+    color: #0f766e;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-redirect a:hover {
+    text-decoration: underline;
+}
+
