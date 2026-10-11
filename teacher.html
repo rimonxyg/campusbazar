@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teacher Registration form</title>
+</head>
+<body>
+    <h1>CAMPUSBUZAR</h1>
+    <h3 align="center">Faculty Registration</h3>
+    <form align="center">
+        <label for="fname">First Name: </label>
+        <input type="text" id="fname" name="fname" required>
+        <br><br>
+
+        <label for="lname">Last Name: </label>
+        <input type="text" id="lname" name="lname" required>
+        <br><br>
+        
+        <label for="gender">Gender: </label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <label for="dob">Date of Birth: </label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <label for="phone">Phone: </label>
+        <input type="tel" id="phone" name="phone" required>
+        <br><br>
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="dept">Department: </label>
+        <select id="dept" name="dept" required>
+            <option value="">Select</option>
+            <option>FST</option>
+            <option>FBA</option>
+            <option>FE</option>
+            <option>FASS</option>
+        </select>
+        <br><br>
+
+        <label for="experience">Experience in years: </label>
+        <input type="number" id="experience" name="experience" min="0" required>
+        <br><br>
+
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password" minlength="8" required>
+        <br><br>
+
+        <label for="confirm">Confirm Password: </label>
+        <input type="password" id="confirm" name="confirm" minlength="8" required>
+        <br><br>
+
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">I agree to the terms and privacy policy</label>
+        <br><br>
+
+        <button type="submit">Create account</button>
+        <button type="clear">Clear</button>
+        <br>
+        <p>Already registered? <a href="login.html">Log in</a></p>
+    </form>
+</body>
+</html>
