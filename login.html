@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Campus Portal - Login</title>
+</head>
+<body>
+
+    <h2>Campus Portal Login</h2>
+
+    <form action="/login-handler" method="POST">
+        
+        <!-- Role Selection -->
+        <label for="user-role"><strong>Select Your Role:</strong></label><br>
+        <select id="user-role" name="role" required>
+            <option value="" disabled selected>-- Choose a Role --</option>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="alumni">Alumni</option>
+            <option value="admin">Campus Admin</option>
+        </select>
+        <br><br>
+
+        <!-- Credentials -->
+        <label for="username"><strong>Username or Email:</strong></label><br>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+
+        <label for="password"><strong>Password:</strong></label><br>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Login</button>
+
+    </form>
+
+</body>
+</html>
