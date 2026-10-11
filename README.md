@@ -1,49 +1,85 @@
-# CampusBazar
+# CampusBazar — University Marketplace & Community Portal
 
-A campus-focused marketplace and community portal designed for university students, faculty, and alumni.
-
-## Overview
-
-This repository contains the pure HTML implementation for the **Alumni Registration** and **Unified Login** interfaces developed for the Web Technology course.
-
-The project strictly follows the instruction to use **100% pure HTML5** (no CSS frameworks, inline styles, or external stylesheets).
+**CampusBazar** is a Daraz-style, hyper-local e-commerce marketplace and community platform built specifically for university students, faculty, and alumni in Bangladesh.
 
 ---
 
-## Files Included
+## 📌 Project Overview
 
-1. **`alumni_registration.html`**
-   - Comprehensive registration form tailored for university alumni.
-   - Structured into clean sections using `<fieldset>` and `<legend>`:
-     - **Account Credentials:** Full name, email, password, confirm password.
-     - **Personal Details:** Gender radio buttons, phone number, date of birth, blood group dropdown.
-     - **Academic Background:** Former student ID, department, degree completed, graduation year.
-     - **Professional Status:** Current employment status, organization, designation, LinkedIn profile URL.
-     - **CampusBazar Involvement:** Areas of interest (selling books/notes, bundles, mentorship, gadgets) and bio textarea.
-     - **Verification Documents:** File uploads for alumni/student ID card and profile photo.
-     - **Confirmation & Actions:** Terms agreement checkbox, submit, reset, and direct login navigation.
+Every semester, students struggle to find affordable textbooks, lab equipment, course notes, and dorm essentials, often relying on unorganized Facebook groups with no search filters and no trust verification. Graduating seniors also face difficulties offloading their semester gear and books before leaving campus.
 
-2. **`login.html`**
-   - Unified login portal supporting all four campus roles: **Student**, **Teacher**, **Alumni**, and **Admin**.
-   - Role selection via radio buttons.
-   - University email / user ID and password input fields with `placeholder` shadow hint text.
-   - "Remember me" option and submit button.
-   - Direct quick-links to registration modules.
+**CampusBazar** solves this problem by providing a centralized, verified campus marketplace tailored to university needs. Transactions are completed through convenient **on-campus meetups**, eliminating courier fees and shipping delays.
 
 ---
 
-## Key HTML Features Used
+## 🎯 Key Features
 
-- **Table Grid Layout:** Form elements and labels are neatly aligned using `<table>`, `<tr>`, and `<td>` for structured presentation without CSS.
-- **HTML5 Form Validation:** Using native attributes such as `required`, `type="email"`, and `type="password"`.
-- **Shadow Hint Text:** Utilizing the `placeholder` attribute on input boxes to provide format guidance to users before typing.
-- **Multipart Data Encoding:** Form configured with `enctype="multipart/form-data"` and `method="post"` to support document and photo uploads.
-- **Accessibility & Linking:** Every input is connected to its label via `for` and `id` attributes. Navigation between pages is provided via standard anchor `<a>` tags.
+1. **Course-Code Search:** Search textbooks and reference materials directly by university course code (e.g., `CSE 3101`, `EEE 2103`).
+2. **Semester Bundles:** Graduating seniors and upperclassmen bundle all required books, notes, and lab supplies for an entire semester into one affordable package.
+3. **Campus Meetup Checkout:** Orders are exchanged directly on campus at designated spots (e.g., cafeteria, study halls, main gates), removing courier logistics.
+4. **Multi-Entity Community:** Tailored accounts and workflows for Students, Teachers, and Alumni.
+5. **Verification & Trust:** Accounts are linked to university credentials (student ID, alumni status, institutional email) to ensure safety.
 
 ---
 
-## How to Run
+## 👥 Platform Roles & Entities
 
-Simply open either file in any web browser:
-- Double-click `login.html` or `alumni_registration.html` from your file explorer.
-- No local server or build tools required.
+CampusBazar is designed around four key entities:
+
+| Role | Description & Primary Capabilities |
+|---|---|
+| **Student** | Browse listings, search by course code, add to cart/wishlist, place orders with on-campus meetup scheduling, and review sellers. |
+| **Teacher / Faculty** | Share recommended reading lists, post academic materials, and participate in campus exchanges. |
+| **Alumni** | Sell or donate graduation bundles, mentor juniors, share career advice, and post lab gear or books. |
+| **Admin** | Manage users, verify seller/alumni credentials, moderate listings, handle dispute reports, and oversee platform analytics. |
+
+---
+
+## 📁 Repository Structure & Current Modules
+
+```
+CampusBazar/
+├── README.md                  # Project overview and documentation
+├── login.html                 # Unified login portal for all entities
+├── alumni_registration.html   # Dedicated registration form for alumni
+└── admin                      # Administrative management module
+```
+
+### Current Implementation Highlights:
+* **Unified Login (`login.html`):** A single, clean login gateway with role selectors (Student, Teacher, Alumni, Admin) enabling access across all four entities.
+* **Alumni Registration (`alumni_registration.html`):** A comprehensive registration portal capturing alumni credentials, graduation year, degree, employment details, community mentorship interests, and verification documents.
+* **Strict Semantic HTML5:** Built using 100% pure HTML5 with `<fieldset>`, `<legend>`, and table-based alignment without external dependencies, adhering strictly to course requirements.
+
+---
+
+## 🛠️ Technology Stack
+
+- **Markup:** HTML5 (semantic elements, native form validation, table grid layouts)
+- **Styling:** CSS3 (modular design system, responsive layout)
+- **Scripting:** Vanilla JavaScript (ES6+, DOM manipulation, client-side persistence via `localStorage`)
+- **Compatibility:** 100% dependency-free, running natively in any modern web browser.
+
+---
+
+## 🚀 How to Run Locally
+
+1. Clone or download this repository:
+   ```bash
+   git clone https://github.com/rimonxyg/campusbazar.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd campusbazar
+   ```
+3. Open any HTML file directly in your preferred web browser:
+   - Double-click `login.html` to access the main portal.
+   - Double-click `alumni_registration.html` to test the alumni registration workflow.
+   - No servers, compilers, or build tools required.
+
+---
+
+## 🎓 Academic Context
+
+- **Course:** Web Technology
+- **Institution:** American International University-Bangladesh (AIUB)
+- **Project Type:** Semester Web Technology Project
