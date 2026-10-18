@@ -35,28 +35,49 @@ CampusBazar is designed around four key entities:
 
 ---
 
-## 📁 Repository Structure & Current Modules
+## 📁 Repository Structure & Modules
 
 ```
 CampusBazar/
-├── README.md                  # Project overview and documentation
-├── login.html                 # Unified login portal for all entities
+├── index.html                 # Homepage with header, search & horizontal navigation
+├── login.html                 # Unified multi-role login portal
+├── student_registration.html  # Student registration (buyer & seller)
 ├── alumni_registration.html   # Dedicated registration form for alumni
-└── admin                      # Administrative management module
+├── teacher.html               # Faculty member registration
+├── admin.html                 # System administration portal
+├── README.md                  # Project overview and documentation
+└── css/                       # Modular CSS Design System (Lab Task 02)
+    ├── base.css               # Box model reset, containers & buttons
+    ├── navbar.css             # Sticky header & horizontal menu with hover/active states
+    ├── forms.css              # Universal form containers, fieldsets & inputs
+    ├── home/home.css          # Homepage hero, cards & category styling
+    ├── auth/login.css         # Unified login styling
+    ├── student/student.css    # Student portal styling
+    ├── alumni/alumni.css      # Alumni portal styling
+    ├── teacher/teacher.css    # Faculty portal styling
+    └── admin/admin.css        # Admin portal styling
 ```
 
-### Current Implementation Highlights:
-* **Unified Login (`login.html`):** A single, clean login gateway with role selectors (Student, Teacher, Alumni, Admin) enabling access across all four entities.
-* **Alumni Registration (`alumni_registration.html`):** A comprehensive registration portal capturing alumni credentials, graduation year, degree, employment details, community mentorship interests, and verification documents.
-* **Strict Semantic HTML5:** Built using 100% pure HTML5 with `<fieldset>`, `<legend>`, and table-based alignment without external dependencies, adhering strictly to course requirements.
+---
+
+## 👥 Project Team & Contributors
+
+| Name | Role | GitHub Profile | Responsibilities |
+|---|---|---|---|
+| **Akhtaruzzaman Rimon** | Project Lead & Full UI/Architecture | [@rimonxyg](https://github.com/rimonxyg) | Core application architecture, Homepage, Unified UI/UX, CSS design system, and multi-portal integration on `main` |
+| **Ahnaf** | Project Contributor | [@ahnaf-prog](https://github.com/ahnaf-prog) | Contributed to initial student registration module *(archived in `team-contributions` branch)* |
+| **Shekhar Roy** | Project Contributor | [@shekhar-roy001](https://github.com/shekhar-roy001) | Contributed to initial faculty registration module *(archived in `team-contributions` branch)* |
+| **M. Hasibul Khan** | Project Contributor | [@ehacker76](https://github.com/ehacker76) | Contributed to initial admin registration module *(archived in `team-contributions` branch)* |
+
+> **Note on Branching:** Individual/draft submissions from group members are preserved in the [`team-contributions`](https://github.com/rimonxyg/campusbazar/tree/team-contributions) branch. The production-ready unified codebase runs on `main`.
 
 ---
 
 ## 🛠️ Technology Stack
 
 - **Markup:** HTML5 (semantic elements, native form validation, table grid layouts)
-- **Styling:** CSS3 (modular design system, responsive layout)
-- **Scripting:** Vanilla JavaScript (ES6+, DOM manipulation, client-side persistence via `localStorage`)
+- **Styling:** CSS3 (modular design system, CSS variables, Flexbox, Grid, responsive `@media` queries)
+- **Scripting:** Vanilla JavaScript (ES6+, client-side persistence via `localStorage`)
 - **Compatibility:** 100% dependency-free, running natively in any modern web browser.
 
 ---
