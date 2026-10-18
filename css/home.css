@@ -1,0 +1,387 @@
+
+/* Hero Section */
+.hero-section {
+  background-color: #0f766e;
+  color: #ffffff;
+  padding: 50px 15px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-badge {
+  display: inline-block;
+  background-color: #f59e0b;
+  color: #ffffff;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.hero-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.hero-title span {
+  color: #f59e0b;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  color: #e6f4f3;
+  margin-bottom: 25px;
+}
+
+/* Course Code Search Box */
+.hero-search-wrapper {
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+}
+
+.hero-search-input {
+  flex: 1;
+  border: none;
+  padding: 10px 15px;
+  font-size: 15px;
+  outline: none;
+  color: #333333;
+}
+
+.hero-search-btn {
+  background-color: #0f766e;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-search-btn:hover {
+  background-color: #0b544e;
+}
+
+.hero-quick-tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.quick-tag {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.quick-tag:hover {
+  background-color: #f59e0b;
+  text-decoration: none;
+}
+
+/* Features Highlights Section */
+.features-section {
+  padding: 40px 15px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dddddd;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.feature-card {
+  flex: 1 1 220px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #0f766e;
+}
+
+.feature-icon-box {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 15px auto;
+  background-color: #e6f4f3;
+  color: #0f766e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 24px;
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+/* Categories Section */
+.categories-section {
+  padding: 40px 15px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 26px;
+  color: #222222;
+  margin-bottom: 8px;
+}
+
+.category-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.category-item {
+  flex: 1 1 140px;
+  max-width: 200px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  padding: 20px 10px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.category-item:hover {
+  border-color: #0f766e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.category-icon {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.category-name {
+  font-weight: bold;
+  color: #333333;
+  font-size: 14px;
+  display: block;
+}
+
+.category-count {
+  font-size: 12px;
+  color: #777777;
+}
+
+/* Featured Listings / Semester Bundles */
+.listings-section {
+  padding: 40px 15px;
+  background-color: #ffffff;
+  border-top: 1px solid #dddddd;
+}
+
+.listings-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  flex: 1 1 240px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+  border-color: #0f766e;
+}
+
+.product-badge-corner {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #f59e0b;
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.product-image-container {
+  height: 160px;
+  background-color: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.product-details {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.product-course {
+  display: inline-block;
+  background-color: #e6f4f3;
+  color: #0f766e;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px 6px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  align-self: flex-start;
+}
+
+.product-title {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #222222;
+}
+
+.product-price-row {
+  margin-top: auto;
+  padding-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0f766e;
+}
+
+.product-original-price {
+  font-size: 13px;
+  color: #888888;
+  text-decoration: line-through;
+  margin-left: 5px;
+}
+
+/* Call to Action Banner */
+.cta-banner {
+  background-color: #0f766e;
+  color: #ffffff;
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.cta-banner h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.cta-banner p {
+  color: #e6f4f3;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+}
+
+/* Footer */
+.main-footer {
+  background-color: #1e293b;
+  color: #cbd5e1;
+  padding: 40px 15px 20px 15px;
+  border-top: 4px solid #0f766e;
+}
+
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-col {
+  flex: 1 1 200px;
+}
+
+.footer-col h4 {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #f59e0b;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #f59e0b;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 26px;
+  }
+}

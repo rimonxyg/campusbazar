@@ -1,0 +1,101 @@
+
+/* reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base Body Styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+  background-color: #f4f6f9;
+  min-height: 100vh;
+}
+
+/* Standard Headings */
+h1, h2, h3, h4 {
+  color: #222222;
+  margin-bottom: 10px;
+}
+
+h1 { font-size: 32px; }
+h2 { font-size: 24px; }
+h3 { font-size: 20px; }
+h4 { font-size: 16px; }
+
+p {
+  margin-bottom: 15px;
+  color: #555555;
+}
+
+/* Hyperlinks */
+a {
+  color: #0f766e;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #0b544e;
+  text-decoration: underline;
+}
+
+/* Responsive Container with Max Width */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Reusable Buttons */
+.btn {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background-color: #0f766e;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #0b544e;
+  text-decoration: none;
+}
+
+.btn-accent {
+  background-color: #f59e0b;
+  color: #ffffff;
+}
+
+.btn-accent:hover {
+  background-color: #d97706;
+  text-decoration: none;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid #0f766e;
+  color: #0f766e;
+}
+
+.btn-outline:hover {
+  background-color: #e6f4f3;
+  text-decoration: none;
+}
