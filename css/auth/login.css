@@ -1,0 +1,114 @@
+
+.login-brand-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.login-brand-header h2 {
+  color: #0f766e;
+  font-size: 26px;
+}
+
+.login-brand-header h3 {
+  color: #666666;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Role Selector Box */
+.role-selector-box {
+  background-color: #f8fafc;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+.role-selector-title {
+  font-size: 12px;
+  font-weight: bold;
+  color: #555555;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.role-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.role-options > div {
+  flex: 1;
+}
+
+.role-radio-label {
+  display: block;
+  padding: 8px 4px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.role-radio-label:hover {
+  border-color: #0f766e;
+  background-color: #e6f4f3;
+}
+
+.role-options input[type="radio"]:checked + .role-radio-label {
+  border-color: #0f766e;
+  background-color: #0f766e;
+  color: #ffffff;
+}
+
+.role-options input[type="radio"] {
+  display: none;
+}
+
+/* Registration Links Card */
+.register-links-card {
+  margin-top: 25px;
+  padding: 15px;
+  background-color: #f8fafc;
+  border-radius: 6px;
+  border: 1px dashed #cccccc;
+  text-align: center;
+}
+
+.register-links-card h4 {
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.register-buttons-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.register-btn {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #0f766e;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.register-btn:hover {
+  background-color: #e6f4f3;
+  border-color: #0f766e;
+  text-decoration: none;
+}

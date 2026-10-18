@@ -1,0 +1,42 @@
+
+/* Alumni Form Header Banner */
+.alumni-header-banner {
+  background-color: #0f766e;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 6px 6px 0 0;
+  margin: -30px -30px 25px -30px;
+}
+
+.alumni-header-banner h2 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.alumni-header-banner p {
+  color: #e6f4f3;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/* File Upload Box (Simple 2px dashed border) */
+.file-upload-wrapper {
+  background-color: #ffffff;
+  border: 2px dashed #cccccc;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.file-upload-wrapper:hover {
+  border-color: #0f766e;
+  background-color: #f0fdfa;
+}
+
+.file-hint {
+  display: block;
+  font-size: 12px;
+  color: #777777;
+  margin-top: 4px;
+}

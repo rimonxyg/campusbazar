@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusBazar — Admin Registration</title>
+    <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/admin/admin.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="main-header">
+    <div class="navbar-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">CB</div>
+        <div class="brand-text">
+          <div class="brand-title">Campus<span>Bazar</span></div>
+          <div class="brand-subtitle">AIUB Student Exchange</div>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="student_registration.html" class="nav-link">Student Portal</a></li>
+          <li class="nav-item"><a href="alumni_registration.html" class="nav-link">Alumni Portal</a></li>
+          <li class="nav-item"><a href="teacher.html" class="nav-link">Faculty Portal</a></li>
+          <li class="nav-item"><a href="admin.html" class="nav-link active">Admin Portal</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline">Admin Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="auth-page">
+    <div class="form-container form-container-narrow">
+      <div class="admin-header-banner">
+        <span class="admin-badge">System Administration</span>
+        <h2>Admin Registration</h2>
+        <p>Register internal management credentials for marketplace moderators and managers.</p>
+      </div>
+
+      <form action="" method="post">
+        <fieldset>
+          <legend>Administrator Credentials</legend>
+          <table class="form-table">
+            <tr>
+              <td><label for="name">Full Name:</label></td>
+              <td><input type="text" id="name" name="name" placeholder="Enter administrator name" required></td>
+            </tr>
+
+            <tr>
+              <td><label for="email">Admin Email:</label></td>
+              <td><input type="email" id="email" name="email" placeholder="admin@campusbazar.test" required></td>
+            </tr>
+
+            <tr>
+              <td><label for="adminid">Admin ID:</label></td>
+              <td><input type="text" id="adminid" name="adminid" placeholder="e.g. ADM-2026-01" required></td>
+            </tr>
+
+            <tr>
+              <td><label for="phone">Phone:</label></td>
+              <td><input type="tel" id="phone" name="phone" placeholder="017xxxxxxxx" required></td>
+            </tr>
+
+            <tr>
+              <td><label for="role">Admin Role:</label></td>
+              <td>
+                <select id="role" name="role" required>
+                  <option value="">Select Administrative Role</option>
+                  <option value="Super Admin">Super Admin (Full Access)</option>
+                  <option value="Product Manager">Product &amp; Listing Moderator</option>
+                  <option value="Order Manager">Order &amp; Dispute Manager</option>
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td><label for="password">Password:</label></td>
+              <td><input type="password" id="password" name="password" placeholder="Enter password (min 8 chars)" minlength="8" required></td>
+            </tr>
+
+            <tr>
+              <td><label for="confirm">Confirm Password:</label></td>
+              <td><input type="password" id="confirm" name="confirm" placeholder="Confirm password" minlength="8" required></td>
+            </tr>
+          </table>
+        </fieldset>
+
+        <div class="form-actions">
+          <input type="submit" value="Register Admin" class="btn-submit">
+          <input type="reset" value="Clear" class="btn-reset">
+        </div>
+
+        <div class="form-footer-nav">
+          <p>Already an administrator? <a href="login.html">Sign In to Dashboard</a></p>
+        </div>
+      </form>
+    </div>
+  </main>
+
+</body>
+</html>

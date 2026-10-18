@@ -1,0 +1,196 @@
+
+/* Main Page Wrapper */
+.auth-page {
+  padding: 40px 15px;
+}
+
+/* Form Container Card */
+.form-container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-container-narrow {
+  max-width: 450px;
+}
+
+/* Form Header Titles */
+.form-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.form-header h2 {
+  color: #0f766e;
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.form-header p {
+  color: #666666;
+  font-size: 14px;
+}
+
+/* Fieldset and Legend */
+fieldset {
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  background-color: #fafafa;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 14px;
+  color: #0f766e;
+  padding: 2px 8px;
+  background-color: #e6f4f3;
+  border: 1px solid #b2dedb;
+  border-radius: 4px;
+}
+
+/* Table Alignment inside Form */
+.form-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.form-table td {
+  padding: 8px 10px;
+  vertical-align: middle;
+}
+
+/* Labels */
+label {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333333;
+}
+
+/* Input Fields and Selects */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="url"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  color: #333333;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* focus */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="url"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #0f766e;
+  outline: none;
+  box-shadow: 0 0 5px rgba(15, 118, 110, 0.4);
+}
+
+/* Radio and Checkbox */
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.radio-item,
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+/* Action Buttons */
+.form-actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-submit {
+  background-color: #0f766e;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #0b544e;
+}
+
+.btn-reset {
+  background-color: #e0e0e0;
+  color: #333333;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-reset:hover {
+  background-color: #cccccc;
+}
+
+/* Footer Links inside Form */
+.form-footer-nav {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.form-footer-nav a {
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 15px;
+  }
+  .form-table, .form-table tr, .form-table td {
+    display: block;
+    width: 100%;
+  }
+  .form-table td {
+    padding: 5px 0;
+  }
+}

@@ -1,69 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Teacher Registration form</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusBazar — Faculty Registration</title>
+    <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/teacher/teacher.css">
 </head>
 <body>
-    <h1>CAMPUSBUZAR</h1>
-    <h3 align="center">Faculty Registration</h3>
-    <form align="center">
-        <label for="fname">First Name: </label>
-        <input type="text" id="fname" name="fname" required>
-        <br><br>
 
-        <label for="lname">Last Name: </label>
-        <input type="text" id="lname" name="lname" required>
-        <br><br>
-        
-        <label for="gender">Gender: </label>
-        <input type="radio" id="male" name="gender" value="male" required>
-        <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label>
-        <br><br>
+  <!-- Navigation Header -->
+  <header class="main-header">
+    <div class="navbar-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">CB</div>
+        <div class="brand-text">
+          <div class="brand-title">Campus<span>Bazar</span></div>
+          <div class="brand-subtitle">AIUB Student Exchange</div>
+        </div>
+      </a>
 
-        <label for="dob">Date of Birth: </label>
-        <input type="date" id="dob" name="dob" required>
-        <br><br>
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="student_registration.html" class="nav-link">Student Portal</a></li>
+          <li class="nav-item"><a href="alumni_registration.html" class="nav-link">Alumni Portal</a></li>
+          <li class="nav-item"><a href="teacher.html" class="nav-link active">Faculty Portal</a></li>
+          <li class="nav-item"><a href="admin.html" class="nav-link">Admin Portal</a></li>
+        </ul>
+      </nav>
 
-        <label for="phone">Phone: </label>
-        <input type="tel" id="phone" name="phone" required>
-        <br><br>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline">Sign In</a>
+      </div>
+    </div>
+  </header>
 
-        <label for="email">Email: </label>
-        <input type="email" id="email" name="email" required>
-        <br><br>
+  <main class="auth-page">
+    <div class="form-container">
+      <div class="teacher-header-banner">
+        <span class="faculty-badge">Academic Faculty Portal</span>
+        <h2>Faculty Member Registration</h2>
+        <p>Recommend course textbooks, share lecture materials, and support student exchanges.</p>
+      </div>
 
-        <label for="dept">Department: </label>
-        <select id="dept" name="dept" required>
-            <option value="">Select</option>
-            <option>FST</option>
-            <option>FBA</option>
-            <option>FE</option>
-            <option>FASS</option>
-        </select>
-        <br><br>
+      <form action="" method="post">
+        <!-- Personal & Identity Information -->
+        <fieldset>
+          <legend>1. Faculty Information</legend>
+          <table class="form-table">
+            <tr>
+              <td><label for="fname">First Name:</label></td>
+              <td><input type="text" id="fname" name="fname" placeholder="First Name" required></td>
+              <td><label for="lname">Last Name:</label></td>
+              <td><input type="text" id="lname" name="lname" placeholder="Last Name" required></td>
+            </tr>
+            <tr>
+              <td><label>Gender:</label></td>
+              <td>
+                <div class="radio-group">
+                  <div class="radio-item">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                  </div>
+                  <div class="radio-item">
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                  </div>
+                </div>
+              </td>
+              <td><label for="dob">Date of Birth:</label></td>
+              <td><input type="date" id="dob" name="dob" required></td>
+            </tr>
+            <tr>
+              <td><label for="email">Institutional Email:</label></td>
+              <td><input type="email" id="email" name="email" placeholder="faculty@aiub.edu" required></td>
+              <td><label for="phone">Phone Number:</label></td>
+              <td><input type="tel" id="phone" name="phone" placeholder="017xxxxxxxx" required></td>
+            </tr>
+          </table>
+        </fieldset>
 
-        <label for="experience">Experience in years: </label>
-        <input type="number" id="experience" name="experience" min="0" required>
-        <br><br>
+        <!-- Academic Department -->
+        <fieldset>
+          <legend>2. Academic Department &amp; Experience</legend>
+          <table class="form-table">
+            <tr>
+              <td><label for="dept">Faculty / Department:</label></td>
+              <td>
+                <select id="dept" name="dept" required>
+                  <option value="">Select Department</option>
+                  <option value="FST">Faculty of Science &amp; Technology (FST)</option>
+                  <option value="FBA">Faculty of Business Administration (FBA)</option>
+                  <option value="FE">Faculty of Engineering (FE)</option>
+                  <option value="FASS">Faculty of Arts &amp; Social Sciences (FASS)</option>
+                </select>
+              </td>
+              <td><label for="experience">Experience (Years):</label></td>
+              <td><input type="number" id="experience" name="experience" min="0" placeholder="e.g. 5" required></td>
+            </tr>
+          </table>
+        </fieldset>
 
-        <label for="password">Password: </label>
-        <input type="password" id="password" name="password" minlength="8" required>
-        <br><br>
+        <!-- Security Credentials -->
+        <fieldset>
+          <legend>3. Account Password</legend>
+          <table class="form-table">
+            <tr>
+              <td><label for="password">Password:</label></td>
+              <td><input type="password" id="password" name="password" minlength="8" placeholder="Minimum 8 characters" required></td>
+              <td><label for="confirm">Confirm Password:</label></td>
+              <td><input type="password" id="confirm" name="confirm" minlength="8" placeholder="Re-enter password" required></td>
+            </tr>
+          </table>
+        </fieldset>
 
-        <label for="confirm">Confirm Password: </label>
-        <input type="password" id="confirm" name="confirm" minlength="8" required>
-        <br><br>
+        <!-- Terms Agreement -->
+        <fieldset>
+          <legend>4. Verification Agreement</legend>
+          <div class="checkbox-item">
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">I agree to the university marketplace terms, faculty guidelines, and privacy policy.</label>
+          </div>
+        </fieldset>
 
-        <input type="checkbox" id="agree" name="agree" required>
-        <label for="agree">I agree to the terms and privacy policy</label>
-        <br><br>
+        <!-- Buttons -->
+        <div class="form-actions">
+          <button type="submit" class="btn-submit">Create Faculty Account</button>
+          <button type="reset" class="btn-reset">Clear Form</button>
+        </div>
 
-        <button type="submit">Create account</button>
-        <button type="clear">Clear</button>
-        <br>
-        <p>Already registered? <a href="login.html">Log in</a></p>
-    </form>
+        <div class="form-footer-nav">
+          <p>Already registered as faculty? <a href="login.html">Log in here</a></p>
+        </div>
+      </form>
+    </div>
+  </main>
+
 </body>
 </html>

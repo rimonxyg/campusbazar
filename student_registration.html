@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusBazar — Student Registration</title>
+    <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/student/student.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="main-header">
+    <div class="navbar-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">CB</div>
+        <div class="brand-text">
+          <div class="brand-title">Campus<span>Bazar</span></div>
+          <div class="brand-subtitle">AIUB Student Exchange</div>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="student_registration.html" class="nav-link active">Student Portal</a></li>
+          <li class="nav-item"><a href="alumni_registration.html" class="nav-link">Alumni Portal</a></li>
+          <li class="nav-item"><a href="teacher.html" class="nav-link">Faculty Portal</a></li>
+          <li class="nav-item"><a href="admin.html" class="nav-link">Admin Portal</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline">Already Registered? Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="auth-page">
+    <div class="form-container">
+      <div class="student-header-banner">
+        <span class="student-badge">Student Member Portal</span>
+        <h2>Student Registration</h2>
+        <p>Buy used textbooks by course code, order semester bundles, or sell your passed courses' gear.</p>
+      </div>
+
+      <form action="" method="post">
+        <!-- 1. Credentials -->
+        <fieldset>
+          <legend>1. Account Credentials</legend>
+          <table class="form-table">
+            <tr>
+              <td><label for="student_name">Full Name:</label></td>
+              <td><input type="text" id="student_name" name="student_name" placeholder="Enter student name" required></td>
+              <td><label for="student_email">Student Email:</label></td>
+              <td><input type="email" id="student_email" name="student_email" placeholder="e.g. 21-xxxxx-1@student.aiub.edu" required></td>
+            </tr>
+            <tr>
+              <td><label for="student_password">Password:</label></td>
+              <td><input type="password" id="student_password" name="student_password" placeholder="Minimum 8 characters" minlength="8" required></td>
+              <td><label for="confirm_password">Confirm Password:</label></td>
+              <td><input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm password" minlength="8" required></td>
+            </tr>
+          </table>
+        </fieldset>
+
+        <!-- 2. Academic Info -->
+        <fieldset>
+          <legend>2. Academic Enrollment</legend>
+          <table class="form-table">
+            <tr>
+              <td><label for="aiub_id">AIUB Student ID:</label></td>
+              <td><input type="text" id="aiub_id" name="aiub_id" placeholder="XX-XXXXX-X" required></td>
+              <td><label for="department">Department / Faculty:</label></td>
+              <td>
+                <select id="department" name="department" required>
+                  <option value="">Select Department</option>
+                  <option value="CSE">Computer Science &amp; Engineering (CSE)</option>
+                  <option value="EEE">Electrical &amp; Electronic Engineering (EEE)</option>
+                  <option value="BBA">Bachelor of Business Admin (BBA)</option>
+                  <option value="IPE">Industrial &amp; Production Eng (IPE)</option>
+                  <option value="English">English</option>
+                  <option value="Law">Law</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="current_semester">Current Semester:</label></td>
+              <td>
+                <select id="current_semester" name="current_semester" required>
+                  <option value="">Select Semester</option>
+                  <option value="1">1st Semester (Freshman)</option>
+                  <option value="2">2nd Semester</option>
+                  <option value="3">3rd Semester</option>
+                  <option value="4">4th Semester</option>
+                  <option value="5">5th Semester</option>
+                  <option value="6">6th Semester</option>
+                  <option value="7">7th Semester</option>
+                  <option value="8">8th Semester</option>
+                  <option value="9">9th+ Semester (Senior)</option>
+                </select>
+              </td>
+              <td><label for="phone">Phone Number:</label></td>
+              <td><input type="tel" id="phone" name="phone" placeholder="017xxxxxxxx" required></td>
+            </tr>
+          </table>
+        </fieldset>
+
+        <!-- 3. Primary Intent -->
+        <fieldset>
+          <legend>3. Marketplace Role</legend>
+          <div class="radio-group">
+            <div class="radio-item">
+              <input type="radio" id="intent_buyer" name="intent" value="buyer" checked>
+              <label for="intent_buyer">Buyer (Looking for textbooks, notes, calculator &amp; bundles)</label>
+            </div>
+            <div class="radio-item">
+              <input type="radio" id="intent_seller" name="intent" value="seller">
+              <label for="intent_seller">Seller (Graduating senior or student selling course items)</label>
+            </div>
+            <div class="radio-item">
+              <input type="radio" id="intent_both" name="intent" value="both">
+              <label for="intent_both">Both (Buy &amp; Sell)</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- 4. Agreement -->
+        <fieldset>
+          <legend>4. Campus Code of Conduct</legend>
+          <div class="checkbox-item">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to conduct all product exchanges safely at designated AIUB campus meetup spots (Cafeteria, Building D, Main Gate).</label>
+          </div>
+        </fieldset>
+
+        <div class="form-actions">
+          <input type="submit" value="Complete Registration" class="btn-submit">
+          <input type="reset" value="Clear" class="btn-reset">
+        </div>
+
+        <div class="form-footer-nav">
+          <p>Already have an account? <a href="login.html">Sign in here</a></p>
+        </div>
+      </form>
+    </div>
+  </main>
+
+</body>
+</html>
+
