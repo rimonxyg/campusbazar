@@ -91,8 +91,11 @@ a:hover {
 
 .btn-outline {
   background-color: transparent;
-  border: 1px solid #0f766e;
+  border: 2px solid #0f766e;
+  padding: 10px 40px;
   color: #0f766e;
+  white-space: nowrap;
+  line-height: 3;
 }
 
 .btn-outline:hover {
