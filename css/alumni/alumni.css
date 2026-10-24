@@ -25,12 +25,14 @@
 .file-upload-wrapper {
   background-color: #ffffff;
   border: 2px dashed #cccccc;
-  padding: 10px;
-  border-radius: 4px;
+  padding: 2px 80px;
+  border-radius: 8px;   
+  text-align: center;  
+  cursor: pointer;      
 }
 
 .file-upload-wrapper:hover {
-  border-color: #0f766e;
+  border-color: #0f766e; 
   background-color: #f0fdfa;
 }
 
