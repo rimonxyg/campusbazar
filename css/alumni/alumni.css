@@ -25,10 +25,10 @@
 .file-upload-wrapper {
   background-color: #ffffff;
   border: 2px dashed #cccccc;
-  padding: 2px 80px;
-  border-radius: 8px;   
-  text-align: center;  
-  cursor: pointer;      
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .file-upload-wrapper:hover {

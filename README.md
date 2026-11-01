@@ -46,6 +46,12 @@ CampusBazar/
 ├── teacher.html               # Faculty member registration
 ├── admin.html                 # System administration portal
 ├── README.md                  # Project overview and documentation
+├── js/                        # Client-Side Form Validation Scripts
+│   ├── student.js             # Student registration validation & popups
+│   ├── alumni.js              # Alumni registration validation & popups
+│   ├── teacher.js             # Faculty registration validation & popups
+│   ├── admin.js               # Admin registration validation & popups
+│   └── login.js               # Login authentication validation & popups
 └── css/                       # Modular CSS Design System (Lab Task 02)
     ├── base.css               # Box model reset, containers & buttons
     ├── navbar.css             # Sticky header & horizontal menu with hover/active states
